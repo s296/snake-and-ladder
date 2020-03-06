@@ -1,0 +1,88 @@
+body{
+    margin:0px;
+    display:flex;
+    background-color: #000;
+    flex-direction: column;
+}
+
+.btn{
+    text-align: center;  
+}
+
+.new-btn{
+    padding:10px;
+    margin:10px;
+    font-size: larger;
+    color: rgb(41, 93, 150);
+}
+
+.container{
+    display:flex;
+    width:100%;
+}
+
+.player-0 ,.player-1{
+    align-self:flex-start;
+    color:rgb(41, 93, 150);
+    flex:1;
+    text-align: center;
+    align-self: stretch;
+    background-color: #d6cbcb;
+}
+
+.game{
+    background-image: url('snake-ladder.png');
+    min-width:431px;
+    min-height:432px;
+    display :flex;
+    flex-direction: column;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+
+}
+
+#row-1, #row-2, #row-3, #row-4, #row-5, #row-6{
+    flex:1;
+    display:flex;
+} 
+
+.game p{
+    flex:1;
+    padding-left:15px;
+    margin:0;
+    border-width:2px ;
+    border-style: solid;
+}
+
+img{
+    height: 110px;
+}
+
+.text-turn{
+    color:red;
+    font-size:50px;
+    text-transform: uppercases;
+}
+
+.winner{
+    font-size: 70px;
+    font-family: "Tangerine", serif;
+    color:red;
+} 
+
+.im{
+    background-size: cover;
+
+}
+
+@media screen and (max-width: 1000px){
+    img{
+        height:10px;
+        
+    }
+    h1, .text-turn{
+        font-size:10px;
+    }
+    
+}
